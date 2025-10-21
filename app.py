@@ -7,7 +7,7 @@ app = Flask(__name__)
 # --- Configuration ---
 # You define the application version directly in the code.
 # You will change this string later to test the CI/CD pipeline.
-APP_VERSION = "v1.0.0"
+APP_VERSION = "v1.0.1"
 
 # --- Routes ---
 
