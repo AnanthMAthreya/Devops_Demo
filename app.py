@@ -26,7 +26,7 @@ def healthz():
     Returns a 200 OK status to indicate that the application is running and healthy.
     This is used by Kubernetes for liveness and readiness probes.
     """
-    return str(HTTPStatus.OK),HTTPStatus.OK
+    return str(HTTPStatus.OK.value),HTTPStatus.OK
 
 
 if __name__ == '__main__':
