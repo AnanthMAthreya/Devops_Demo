@@ -84,9 +84,7 @@ Option A — Use the image pushed to Docker Hub:
 
 2. Install/upgrade Helm release (replace `your-dockerhub-username` and `tag` as needed):
    ```powershell
-   helm upgrade --install flask-release ./flask-chart \
-     --set image.repository=your-dockerhub-username/devops_demo \
-     --set image.tag=latest
+   helm install flask-release ./flask-chart
    ```
 
 Option B — Build locally and load into kind (no push required):
