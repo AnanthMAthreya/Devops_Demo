@@ -86,26 +86,7 @@ Option A — Use the image pushed to Docker Hub:
    ```powershell
    helm install flask-release ./flask-chart
    ```
-
-Option B — Build locally and load into kind (no push required):
-1. Build the image locally:
-   ```powershell
-   docker build -t my-flask-app:latest .
-   ```
-
-2. Create kind cluster and load image:
-   ```powershell
-   kind create cluster --name devops-demo
-   kind load docker-image my-flask-app:latest --name devops-demo
-   ```
-
-3. Install Helm release pointing to local image name:
-   ```powershell
-   helm upgrade --install flask-release ./flask-chart \
-     --set image.repository=my-flask-app \
-     --set image.tag=latest
-   ```
-
+   
 ## Verify deployment & access the app
 
 1. Check pods and services:
