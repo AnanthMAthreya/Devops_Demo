@@ -9,7 +9,7 @@ replicaCount: 1
 image:
   repository: ananth2004/devops_demo
   # This sets the pull policy for images.
-  pullPolicy: IfNotPresent
+  pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
   tag: "latest"
 
@@ -24,7 +24,7 @@ serviceAccount:
   # Specifies whether a service account should be created.
   create: true
   # Automatically mount a ServiceAccount's API credentials?
-  automount: true
+  automountServiceAccountToken: true
   # Annotations to add to the service account.
   annotations: {}
   # The name of the service account to use.
