@@ -75,7 +75,6 @@ Make sure you set these GitHub repository secrets:
 
 ## Deploy to a local cluster (kind) — full steps
 
-Option A — Use the image pushed to Docker Hub:
 1. Create a kind cluster:
    ```powershell
    kind create cluster --name devops-demo
