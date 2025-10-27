@@ -27,6 +27,10 @@ def healthz():
     This is used by Kubernetes for liveness and readiness probes.
     """
     return str(HTTPStatus.OK.value),HTTPStatus.OK
+@app.route('/version')
+def healthz():
+    return f"{APP_VERSION}"
+
 
 
 if __name__ == '__main__':
