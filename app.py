@@ -28,7 +28,7 @@ def healthz():
     """
     return str(HTTPStatus.OK.value),HTTPStatus.OK
 @app.route('/version')
-def healthz():
+def version():
     return f"{APP_VERSION}"
 
 
